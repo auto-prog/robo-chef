@@ -1,0 +1,41 @@
+
+
+.add-ingredients{
+    
+    display: flex;
+   gap: 10px; 
+   justify-content: center;
+   padding-top: 30px;
+   padding-left: 11px;
+   padding-right: 11px;
+  
+}
+.add-ingredients input{
+    border: solid yellow 2px;
+    border-radius: 10px;
+    padding: 5px;
+    width: 250px;
+    flex-grow: 1;
+    max-width: 400px;
+
+}
+.add-ingredients button::before{
+    content: '+';
+    padding-right: 6px;
+}
+.add-ingredients button{
+    border-radius: 10px;
+    padding: 7px;
+    font-family: ""Inter", sans-serif";
+    font-weight: 300;
+    color: white;
+    background: #000;
+    font-size: 14px;
+    border:solid yellow;
+}
+.add-ingredients button:hover{
+ background:yellow;
+ color: #000;
+ cursor: pointer;
+ 
+}
