@@ -18,6 +18,10 @@
     align-items: center;
     gap: 10px;
 }
+.box button{
+    width: 180px;
+    font-size: x-large;
+}
 
 
 
