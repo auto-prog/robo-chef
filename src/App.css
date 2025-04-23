@@ -1,5 +1,5 @@
 
-@import "./componentes/Header/Header.css";
+
 
 .box{
     width: 450px;
@@ -12,6 +12,9 @@
     min-height: 550px;
     max-width: 450px;
     max-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
