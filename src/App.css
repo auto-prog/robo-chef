@@ -4,7 +4,9 @@
 .box{
     width: 450px;
     height: 550px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     border: solid yellow 4px;
     box-sizing: border-box;

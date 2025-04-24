@@ -1,8 +1,7 @@
 
 
 import './App.css'
-import Header from './componentes/Header/Header'
-import Main_content from './componentes/Main_content/Main_content'
+
 
 function App() {
   
@@ -10,8 +9,10 @@ function App() {
   return (
     <>
         <div className='box'>
-        <Header/>
-        <Main_content/>
+         <form >
+            <label htmlFor='email'>Email</label>
+            <input id='email' type="email" placeholder='example12@gmail.com' />
+         </form>
         </div>
     </>
   )
