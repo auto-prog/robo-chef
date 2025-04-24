@@ -11,16 +11,19 @@ function App() {
         !pervshow
     )
         
-   
+
         
-  }
-  let showtheiteam =isshow ? "hai this is a test":null
-  console.log(showtheiteam)
+}
+let showtheiteam =isshow ? "hai this is a test":null
+console.log(showtheiteam) 
+let test
+ showtheiteam? test= showtheiteam && "hai this sdhfbkdhc" :test="hai"
+
   return (
     <>
     <div className='box'>
         <h1>{showtheiteam}</h1>
-        <p>next test</p>
+        <p>{test}</p>
         <button onClick={showt}>click me</button>
     </div>
     </>
