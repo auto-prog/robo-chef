@@ -2,16 +2,19 @@
 @import "./componentes/Header/Header.css";
 
 .box{
-    width: 450px;
-    height: 550px;
-    
+    width: 550px;
+    padding: 9px;
     border-radius: 20px;
     border: solid yellow 4px;
     box-sizing: border-box;
-    min-width: 450px;
-    min-height: 550px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     max-width: 450px;
-    max-height: 550px;
+    
+    
 }
 
 

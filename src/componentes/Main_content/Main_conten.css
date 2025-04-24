@@ -47,7 +47,7 @@
 }
 .sent-Recipe-container{
     padding: 10px;
-    width: 400px;
+    width: 430px;
     background:rebeccapurple;
     border-radius: 20px;
     display: flex;
@@ -72,5 +72,13 @@ main{
     padding: 10px;
     border-radius: 10px;
     background: yellow;
+    
+}
+.recipe-placeholder{
+    margin-top: 12px;
+    background: gainsboro;
+    border-radius: 30px;
+    color: #000;
+    padding: 20px;
     
 }
