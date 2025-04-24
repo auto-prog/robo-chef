@@ -15,19 +15,16 @@ let  each =ingredient.map((food,index)=>{
 
 
 
-function handelSubmit(e){
-
-  e.preventDefault()
-  
-  let inputvalue= new FormData(e.currentTarget).get("inputvalue")
-  inputvalue ? setingredient( prev=> [...prev,inputvalue]) : window.alert('Pls enter any one ingredient !')
+function handelSubmit(formdata){
+  const user_ingredient=formdata.get('inputvalue')
+  user_ingredient ? setingredient( prev=> [...prev,user_ingredient]) : window.alert('Pls enter any one ingredient !')
   
    
 
 }
   return (
     <main>
-    <form className='add-ingredients' onSubmit={handelSubmit} >
+    <form className='add-ingredients' action={handelSubmit} >
         <input type="text" aria-label='this is a input' placeholder='Eg: eggs' name='inputvalue'/>
         <button type='submit'>Add Ingredients</button>
     </form>
