@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import "./Main_conten.css"
 
 function Main_content() {
-  let ingredients_list = ['apple', 'banana', 'orange', 'mango'];
-  const [ingredient,setingredient]=useState(ingredients_list)
+  
+  const [ingredient,setingredient]=useState([])
 
 
 let  each =ingredient.map((food,index)=>{
@@ -14,7 +14,7 @@ let  each =ingredient.map((food,index)=>{
 
 
 
- 
+
 function handelSubmit(e){
 
   e.preventDefault()
