@@ -1,18 +1,28 @@
 
-
+import { useState } from 'react'
 import './App.css'
-import Header from './componentes/Header/Header'
-import Main_content from './componentes/Main_content/Main_content'
 
 function App() {
-  
+  const [isshow,setisshow]=useState(false)
 
+
+  function showt(){
+    setisshow(pervshow=>
+        !pervshow
+    )
+        
+   
+        
+  }
+  let showtheiteam =isshow ? "hai this is a test":null
+  console.log(showtheiteam)
   return (
     <>
-        <div className='box'>
-        <Header/>
-        <Main_content/>
-        </div>
+    <div className='box'>
+        <h1>{showtheiteam}</h1>
+        <p>next test</p>
+        <button onClick={showt}>click me</button>
+    </div>
     </>
   )
 }
