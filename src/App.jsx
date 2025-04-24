@@ -3,28 +3,27 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [isshow,setisshow]=useState(false)
-
-
-  function showt(){
-    setisshow(pervshow=>
-        !pervshow
-    )
+  const [isshow,setisshow]=useState(["a","b","shvg"])
+let result=""
+function unread(){
+    if(isshow.length==0){
+        return  `you have ${isshow.length} unreaded message`
         
-
-        
+    }else if(isshow.length==1){
+     return "you have 1 unreaded message"
+    }else if(isshow.length>1){
+     return `you had ${isshow.length} unreaded message`
+     console.log(result)
+    }
+    
 }
-let showtheiteam =isshow ? "hai this is a test":null
-console.log(showtheiteam) 
-let test
- showtheiteam? test= showtheiteam && "hai this sdhfbkdhc" :test="hai"
 
   return (
     <>
     <div className='box'>
-        <h1>{showtheiteam}</h1>
-        <p>{test}</p>
-        <button onClick={showt}>click me</button>
+        
+        <button>click me</button>
+        <h1>{unread()}</h1>
     </div>
     </>
   )
