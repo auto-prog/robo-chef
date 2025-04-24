@@ -45,3 +45,32 @@
  cursor: pointer;
  
 }
+.sent-Recipe-container{
+    padding: 10px;
+    width: 400px;
+    background:rebeccapurple;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    margin-top: 30px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+.sent-Recipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.sent-Recipe button{
+    padding: 10px;
+    border-radius: 10px;
+    background: yellow;
+    
+}

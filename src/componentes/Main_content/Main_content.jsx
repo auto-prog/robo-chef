@@ -28,7 +28,16 @@ function handelSubmit(formdata){
         <input type="text" aria-label='this is a input' placeholder='Eg: eggs' name='inputvalue'/>
         <button type='submit'>Add Ingredients</button>
     </form>
+    <section>
+      <h1>Ingredient i have :</h1>
       {each}
+      <div className='sent-Recipe-container'>
+        <div className='sent-Recipe'>
+          <p>Get Recipe From The Robo-Chef</p>
+          <button>Get Recipe</button>
+        </div>
+      </div>
+    </section>
     </main>
   )
 }
